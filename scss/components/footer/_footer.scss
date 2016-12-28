@@ -1,0 +1,28 @@
+// Footer
+//
+// No styleguide reference
+.c-footer {
+  padding: 2em 0;
+  background: color('blue');
+  color: color('white');
+  text-align: center;
+
+  &__text {
+    font-size: pxtoem(14);
+    margin: 0;
+
+    a {
+      @include transition;
+      color: color('white');
+      border-bottom: solid 0.08em color('white');
+      text-decoration: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: color('red');
+        border-bottom-color: color('red');
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+// Logo
+//
+// No style guide reference
+.c-logo {
+  display: block;
+  background-image: url('../images/svg/logo.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  margin: 0 auto;
+  width: pxtoem(92);
+  height: pxtoem(28);
+
+  @include respond-to('medium') {
+    width: pxtoem(120);
+    height: pxtoem(37);
+  }
+
+  @include respond-to('large') {
+    width: pxtoem(171);
+    height: pxtoem(53);
+  }
+
+  &__image {
+    opacity: 0;
+    width: pxtoem(92);
+    height: pxtoem(28);
+
+    @include respond-to('large') {
+      width: pxtoem(171);
+      height: pxtoem(53);
+    }
+  }
+}

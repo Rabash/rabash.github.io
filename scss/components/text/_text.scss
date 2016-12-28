@@ -1,0 +1,171 @@
+// Text
+//
+// Style guide: text
+
+// Body text
+//
+// Markup: body.twig
+//
+// Style guide: text.body
+.c-body {
+  font-size: pxtoem(14);
+  line-height: 1.65;
+  text-align: left;
+
+  @include respond-to('medium') {
+    font-size: pxtoem(16);
+  }
+
+  &.-center {
+    text-align: center;
+
+    @include respond-to('medium') {
+      font-size: pxtoem(16);
+    }
+
+    @include respond-to('xlarge') {
+      font-size: pxtoem(18);
+    }
+  }
+
+  img,
+  .c-media {
+    display: block;
+    margin: 0 0 1.5em;
+  }
+
+  video,
+  object,
+  iframe {
+    max-width: 100%;
+    margin: 0 0 1.5em;
+  }
+
+  a {
+    @include transition;
+    color: color('red');
+    border-bottom: solid 0.08em color('red');
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: color('blue');
+      border-bottom-color: color('blue');
+    }
+  }
+
+  ul,
+  ol {
+    padding-left: 3em;
+    margin-top: 0;
+    margin-bottom: 1.6em;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  li {
+    padding-left: 0.3em;
+  }
+
+  table {
+    margin-bottom: 1.6em;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: pxtoem(22,16);
+    margin: 1.2em 0 0.3em;
+
+    @include respond-to('large') {
+      font-size: pxtoem(28,20);
+    }
+
+    + h3 {
+      margin-top: 0;
+    }
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: pxtoem(18,16);
+    margin: 1.2em 0 0.3em;
+
+    @include respond-to('large') {
+      font-size: pxtoem(24,20);
+    }
+  }
+
+  p {
+    margin: 0 0 1em;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  blockquote {
+    position: relative;
+    font-size: pxtoem(18);
+    line-height: pxtoem(20,16);
+    text-align: center;
+    margin: 3em 0.5em 1.5em;
+
+    @include respond-to('large') {
+      font-size: pxtoem(27,21);
+      line-height: pxtoem(35,27);
+    }
+
+    &:before {
+      position: absolute;
+      content: '”';
+      font-size: 3.5em;
+      line-height: 1em;
+      top: -0.5em;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  *:first-child {
+    margin-top: 0;
+  }
+}
+
+// Preamble
+//
+// Intro before body text.
+//
+// Markup: preamble.twig
+//
+// Style guide: text.preamble
+.c-preamble {
+  font-size: pxtoem(16);
+  line-height: 1.65;
+  max-width: 34em;
+  font-style: italic;
+
+  @include respond-to('medium') {
+    font-size: pxtoem(18);
+  }
+
+  @include respond-to('xlarge') {
+    font-size: pxtoem(22);
+  }
+
+  a {
+    @include transition;
+    color: color('red');
+    border-bottom: solid 0.08em color('red');
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: color('blue');
+      border-bottom-color: color('blue');
+    }
+  }
+}

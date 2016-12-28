@@ -1,0 +1,27 @@
+// Colors
+//
+// All colors used on the website.
+//
+// Markup: color-kss-markup.twig
+//
+// Weight: -1
+//
+// Style guide: colors
+
+/// Map of colors.
+/// @see {function} color
+/// @type Map
+$colors: (
+  'black': (
+    base: #1b1b1b
+  ),
+  'white': (
+    base: #f7f6f4
+  ),
+  'blue': (
+    base: #000032
+  ),
+  'red': (
+    base: #de001e
+  )
+);

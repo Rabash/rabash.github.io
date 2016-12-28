@@ -1,0 +1,49 @@
+// Links
+//
+// Style guide: links
+
+// Cursor for toggle buttons/links
+[data-a11y-toggle] {
+  cursor: pointer;
+}
+
+// Skip-Link
+//
+// Skip links are used to let users who navigate with keyboard skip navigation
+// and go directly to main content.
+//
+// Markup: skip-link.twig
+//
+// Style guide: links.skip-link
+.c-skip-link {
+  background: color('black');
+  color: color('white');
+  text-align: center;
+  padding: 1.5em 0;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+
+  &:focus {
+    color: color('white');
+  }
+}
+
+.c-bookmark {
+  text-decoration: none;
+  font-weight: normal;
+
+  img {
+    @include transition;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+
+    img {
+      opacity: 0.9;
+    }
+  }
+}

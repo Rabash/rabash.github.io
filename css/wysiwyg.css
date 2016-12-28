@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+.c-body,
+body {
+  font-size: 0.875em;
+  line-height: 1.65;
+  text-align: left;
+}
+
+.c-body.-center,
+body.-center {
+  text-align: center;
+}
+
+.c-body img,
+body img,
+.c-body .c-media,
+body .c-media {
+  display: block;
+  margin: 0 0 1.5em;
+}
+
+.c-body video,
+body video,
+.c-body object,
+body object,
+.c-body iframe,
+body iframe {
+  max-width: 100%;
+  margin: 0 0 1.5em;
+}
+
+.c-body a,
+body a {
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  color: #de001e;
+  border-bottom: solid 0.08em #de001e;
+  text-decoration: none;
+}
+
+.c-body a:hover,
+body a:hover,
+.c-body a:focus,
+body a:focus,
+.c-body a:active,
+body a:active {
+  color: #000032;
+  border-bottom-color: #000032;
+}
+
+.c-body ul,
+body ul,
+.c-body ol,
+body ol {
+  padding-left: 3em;
+  margin-top: 0;
+  margin-bottom: 1.6em;
+}
+
+.c-body ul:last-child,
+body ul:last-child,
+.c-body ol:last-child,
+body ol:last-child {
+  margin: 0;
+}
+
+.c-body li,
+body li {
+  padding-left: 0.3em;
+}
+
+.c-body table,
+body table {
+  margin-bottom: 1.6em;
+}
+
+.c-body h2,
+body h2 {
+  font-weight: bold;
+  font-size: 1.375em;
+  margin: 1.2em 0 0.3em;
+}
+
+.c-body h2 + h3,
+body h2 + h3 {
+  margin-top: 0;
+}
+
+.c-body h3,
+body h3 {
+  font-weight: bold;
+  font-size: 1.125em;
+  margin: 1.2em 0 0.3em;
+}
+
+.c-body p,
+body p {
+  margin: 0 0 1em;
+}
+
+.c-body p:last-child,
+body p:last-child {
+  margin: 0;
+}
+
+.c-body blockquote,
+body blockquote {
+  position: relative;
+  font-size: 1.125em;
+  line-height: 1.25em;
+  text-align: center;
+  margin: 3em 0.5em 1.5em;
+}
+
+.c-body blockquote:before,
+body blockquote:before {
+  position: absolute;
+  content: '”';
+  font-size: 3.5em;
+  line-height: 1em;
+  top: -0.5em;
+  left: 0;
+  right: 0;
+}
+
+.c-body *:first-child,
+body *:first-child {
+  margin-top: 0;
+}
+
+.c-preamble {
+  font-size: 1em;
+  line-height: 1.65;
+  max-width: 34em;
+  font-style: italic;
+}
+
+.c-preamble a {
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  color: #de001e;
+  border-bottom: solid 0.08em #de001e;
+  text-decoration: none;
+}
+
+.c-preamble a:hover,
+.c-preamble a:focus,
+.c-preamble a:active {
+  color: #000032;
+  border-bottom-color: #000032;
+}
+
+body {
+  margin: 2em;
+  width: 727px;
+}
+
+@media (min-width: 34.375em) {
+  .c-body,
+  body {
+    font-size: 1em;
+  }
+
+  .c-body.-center,
+  body.-center {
+    font-size: 1em;
+  }
+
+  .c-preamble {
+    font-size: 1.125em;
+  }
+}
+
+@media (min-width: 48em) {
+  .c-body h2,
+  body h2 {
+    font-size: 1.4em;
+  }
+
+  .c-body h3,
+  body h3 {
+    font-size: 1.2em;
+  }
+
+  .c-body blockquote,
+  body blockquote {
+    font-size: 1.28571em;
+    line-height: 1.2963em;
+  }
+}
+
+@media (min-width: 64em) {
+  .c-body.-center,
+  body.-center {
+    font-size: 1.125em;
+  }
+
+  .c-preamble {
+    font-size: 1.375em;
+  }
+}
+/*# sourceMappingURL=../css/maps/wysiwyg.css.map */
