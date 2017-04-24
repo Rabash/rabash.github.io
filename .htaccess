@@ -5,3 +5,7 @@
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^(.*)\.html$ /$1 [L,R=301]
 </IfModule>
+
+# Permanent URL redirect
+Redirect 301 /blogg/nar-bytte-du-losenord-senast http://hannahandersson.se/sv/byt-losenord
+Redirect 301 /blogg/sa-skriver-du-battre-lankar-atta-tips-att-skriva-bra-lanktexter http://hannahandersson.se/sv/skriv-bra-lankar
